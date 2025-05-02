@@ -1,4 +1,4 @@
-name: Deploy static content to Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
@@ -24,13 +24,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Rename to index.html
+        run: mv Port_Website.html index.html
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'Port_Website.html'
+          path: ./  # Uploads the entire current directory (now containing index.html)
 
       - name: Deploy to GitHub Pages
         id: deployment
