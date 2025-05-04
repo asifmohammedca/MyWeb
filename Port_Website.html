@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
         html {
             scroll-behavior: smooth;
         }
+
         body {
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -16,20 +18,23 @@
             color: #2c3e50;
             overflow-x: hidden;
         }
+
         header {
             background: linear-gradient(135deg, #34495e, #2c3e50);
             color: white;
             padding: 20px;
             text-align: center;
             position: relative;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
+
         nav {
             padding: 10px 0;
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
         }
+
         nav a {
             color: white;
             margin: 5px 15px;
@@ -38,6 +43,7 @@
             position: relative;
             transition: all 0.3s ease;
         }
+
         nav a:after {
             content: '';
             position: absolute;
@@ -48,9 +54,11 @@
             background-color: #3498db;
             transition: width 0.3s ease;
         }
+
         nav a:hover:after {
             width: 100%;
         }
+
         .download-btn {
             position: absolute;
             top: 20px;
@@ -66,24 +74,28 @@
             text-decoration: none;
             color: white;
             font-weight: bold;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
             transition: all 0.3s ease;
-            border: 2px solid rgba(255,255,255,0.2);
+            border: 2px solid rgba(255, 255, 255, 0.2);
             backdrop-filter: blur(5px);
         }
+
         .download-btn i {
             margin-right: 10px;
             font-size: 18px;
         }
+
         .download-btn:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
             background: #2980b9;
-            border-color: rgba(255,255,255,0.4);
+            border-color: rgba(255, 255, 255, 0.4);
         }
+
         .tooltip {
             position: relative;
         }
+
         .tooltip .tooltiptext {
             visibility: hidden;
             width: 120px;
@@ -103,8 +115,9 @@
             opacity: 0;
             transition: opacity 0.3s;
             font-size: 14px;
-        
+
         }
+
         .tooltip .tooltiptextgit {
             visibility: hidden;
             width: 120px;
@@ -124,16 +137,19 @@
             opacity: 0;
             transition: opacity 0.3s;
             font-size: 14px;
-        
+
         }
+
         .tooltip:hover .tooltiptextgit {
             visibility: visible;
             opacity: 5;
         }
+
         .tooltip:hover .tooltiptext {
             visibility: visible;
             opacity: 5;
         }
+
         section {
             padding: 40px;
             max-width: 1000px;
@@ -142,67 +158,101 @@
             transform: translateY(30px);
             transition: all 0.8s ease;
         }
+
         section.visible {
             opacity: 1;
             transform: translateY(0);
         }
+
         h1 {
             margin: 0;
             font-size: 2.5rem;
             animation: fadeInDown 1s ease-out;
         }
+
         header p {
             animation: fadeInUp 1s ease-out 0.3s;
             animation-fill-mode: both;
         }
+
         @keyframes fadeInDown {
             from {
                 opacity: 0;
                 transform: translateY(-30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
+
         @keyframes fadeInUp {
             from {
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
+
         @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
         }
+
         @keyframes slideIn {
-            from { transform: translateX(-50px); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
+            from {
+                transform: translateX(-50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
         }
+
         @keyframes pulseAnimation {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
         }
+
         h2 {
             border-bottom: 2px solid #3498db;
             padding-bottom: 5px;
             display: inline-block;
             animation: slideIn 0.8s ease-out;
         }
+
         ul {
             list-style-type: none;
             padding: 0;
         }
+
         .skill-list li {
             margin-bottom: 15px;
             position: relative;
             padding-left: 25px;
         }
+
         .skill-list li:before {
             font-family: "Font Awesome 5 Free";
             font-weight: 900;
@@ -210,6 +260,7 @@
             left: 0;
             color: #3498db;
         }
+
         .contact a {
             display: inline-flex;
             align-items: center;
@@ -218,28 +269,33 @@
             text-decoration: none;
             transition: all 0.3s ease;
         }
+
         .contact a:hover {
             transform: translateY(-3px);
             color: #2980b9;
         }
+
         .contact a i {
             margin-right: 8px;
             font-size: 18px;
         }
+
         .project-card {
             background: #ecf0f1;
             border-radius: 12px;
-            box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
             padding: 25px;
             margin-bottom: 30px;
             transition: all 0.4s ease;
             position: relative;
             overflow: hidden;
         }
+
         .project-card:hover {
             transform: translateY(-8px);
-            box-shadow: 0 12px 20px rgba(0,0,0,0.12);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
         }
+
         .project-card:before {
             content: '';
             position: absolute;
@@ -250,26 +306,33 @@
             background: #3498db;
             transition: width 0.3s ease;
         }
+
         .project-card:hover:before {
             width: 8px;
         }
+
         .project-card h3 {
             margin-top: 0;
             display: flex;
             align-items: center;
         }
+
         .project-card h3 i {
             margin-right: 10px;
             color: #3498db;
         }
-        .project-points li, .research-points li {
+
+        .project-points li,
+        .research-points li {
             list-style-type: none;
             margin-left: 0;
             margin-bottom: 8px;
             position: relative;
             padding-left: 25px;
         }
-        .project-points li:before, .research-points li:before {
+
+        .project-points li:before,
+        .research-points li:before {
             content: "\f0da";
             font-family: "Font Awesome 5 Free";
             font-weight: 900;
@@ -277,6 +340,7 @@
             left: 0;
             color: #3498db;
         }
+
         footer {
             text-align: center;
             padding: 25px;
@@ -284,9 +348,11 @@
             color: white;
             margin-top: 40px;
         }
+
         a {
             color: #3498db;
         }
+
         .project-link {
             position: absolute;
             top: 20px;
@@ -301,15 +367,18 @@
             color: white;
             transition: all 0.3s ease;
         }
+
         .project-link:hover {
             transform: translateY(-3px) rotate(15deg);
             background: #2980b9;
         }
+
         .doc-dropdown {
             position: relative;
             display: inline-block;
             margin: 10px 15px;
         }
+
         .doc-dropdown-btn {
             background: #3498db;
             color: white;
@@ -325,16 +394,18 @@
             justify-content: center;
             transition: all 0.3s ease;
         }
+
         .doc-dropdown-btn:hover {
             background: #2980b9;
             transform: translateY(-3px);
         }
+
         .doc-dropdown-content {
             display: none;
             position: absolute;
             background-color: white;
             min-width: 160px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
             z-index: 1;
             border-radius: 8px;
             overflow: hidden;
@@ -343,6 +414,7 @@
             transform: translateX(-50%);
             animation: fadeIn 0.3s ease;
         }
+
         .doc-dropdown-content a {
             color: #2c3e50;
             padding: 12px 16px;
@@ -350,21 +422,26 @@
             display: block;
             transition: background 0.2s ease;
         }
+
         .doc-dropdown-content a:hover {
             background: #ecf0f1;
         }
+
         .doc-dropdown:hover .doc-dropdown-content {
             display: block;
         }
+
         .doc-dropdown .tooltiptext {
             bottom: auto;
             top: -40px;
         }
+
         .experience-item {
             position: relative;
             padding-left: 30px;
             margin-bottom: 30px;
         }
+
         .experience-item:before {
             content: '';
             position: absolute;
@@ -375,6 +452,7 @@
             border-radius: 50%;
             background: #3498db;
         }
+
         .experience-item:after {
             content: '';
             position: absolute;
@@ -384,23 +462,28 @@
             height: calc(100% - 24px);
             background: #3498db;
         }
+
         .experience-item:last-child:after {
             display: none;
         }
+
         .experience-item h3 {
             margin-bottom: 5px;
         }
+
         .experience-item p {
             margin-top: 0;
             margin-bottom: 10px;
             color: #7f8c8d;
         }
+
         .tech-stack {
             margin-top: 15px;
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
         }
+
         .tech-tag {
             background: #3498db;
             color: white;
@@ -411,312 +494,583 @@
             align-items: center;
             transition: all 0.3s ease;
         }
+
         .tech-tag i {
             margin-right: 5px;
         }
+
         .tech-tag:hover {
             transform: translateY(-2px);
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             background: #2980b9;
         }
+
         /* Hover highlight for text within sections */
-        section p:hover, section li:hover {
+        section p:hover,
+        section li:hover {
             background-color: rgba(52, 152, 219, 0.1);
             border-radius: 4px;
             transition: all 0.3s ease;
         }
+
         /* Attention animation for CV button */
         .download-btn.attention {
             animation: pulseAnimation 2s infinite;
         }
+
+        .address-details {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.9rem;
+        }
+
+        .address-details i {
+            margin-right: 8px;
+            color: #3498db;
+        }
+
+        .profile-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            margin-right: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .profile-photo:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .profile-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .profile-info {
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .profile-container {
+                flex-direction: column;
+                text-align: left;
+            }
+
+            .profile-photo {
+                margin-right: 30px;
+                margin-bottom: 20px;
+            }
+
+            .profile-info {
+                text-align: left;
+            }
+        }
+        /* Mobile Styles */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  header nav {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  header nav ul li {
+    width: 100%;
+  }
+
+  header nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+  }
+
+  section {
+    padding: 20px 10px;
+  }
+
+  .about, .skills, .projects, .contact {
+    text-align: center;
+  }
+
+  .projects .project-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects .project-list .project {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .contact form {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 15px 10px;
+  }
+}
+
     </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
 
-<header>
-    <h1>Asif Mohammed C A</h1>
-    <p><i class="fas fa-laptop-code"></i> Software Engineer | Backend Developer </p>
-    <a class="download-btn attention tooltip" href="https://drive.google.com/file/d/1YYXLUh3hnuRJQZSA8-LoB1FBtDv4IwRG/view?usp=drive_link" target="_blank" 
-    rel="noopener noreferrer">
-        <i class="fas fa-file-download"></i> Download CV
-        <span class="tooltiptext">Download Resume</span>
-    </a>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#research">Research & Development</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
-
-<section id="about" class="visible">
-    <h2>About Me</h2>
-    <p>Dedicated Software Engineer with 2+ years of experience in backend development, cloud technologies, and
-        blockchain solutions. Proficient in Java and Spring Boot, specializing in developing scalable, high-performance
-        applications. Expertise in microservices, RESTful API design, and distributed systems. Enthusiastic
-        problem-solver with a track record of leading critical projects from concept to deployment. Currently pursuing a Master's in Computer Engineering for IoT Systems at Hochschule Nordhausen University of Applied Sciences, Germany.</p>
-</section>
-
-<section id="skills" class="visible">
-    <h2>Core Skills</h2>
-    <ul class="skill-list">
-        <li style="--fa-icon: '\f121';"><i class="fas fa-code"></i> <strong>Languages:</strong> Java, Python, JavaScript, Solidity, C++, TypeScript</li>
-        <li style="--fa-icon: '\f13b';"><i class="fas fa-cogs"></i> <strong>Frameworks:</strong> Spring Boot, Flask, Node.js, Express.js, Truffle</li>
-        <li style="--fa-icon: '\f1c0';"><i class="fas fa-database"></i> <strong>Databases:</strong> PostgreSQL, MongoDB, MySQL, Apache Druid</li>
-        <li style="--fa-icon: '\f0c2';"><i class="fas fa-cloud"></i> <strong>Cloud & Tools:</strong> Docker, Kubernetes, GCP Pub/Sub, Jenkins, GitHub Actions</li>
-        <li style="--fa-icon: '\f085';"><i class="fas fa-microchip"></i> <strong>Technologies:</strong> Microservices, RESTful APIs, GraphQL, Web3, Blockchain</li>
-        <li style="--fa-icon: '\f1e0';"><i class="fas fa-code-branch"></i> <strong>Version Control:</strong> GitLab, GitHub, BitBucket</li>
-        <li style="--fa-icon: '\f120';"><i class="fas fa-terminal"></i> <strong>Debugging & IDEs:</strong> IntelliJ IDEA, PyCharm, VS Code — strong debugging and troubleshooting skills</li>
-    </ul>
-</section>
-
-<section id="experience" class="visible">
-    <h2>Professional Experience</h2>
-    
-    <div class="experience-item">
-        <h3>Bytestrone, Kochi, India</h3>
-        <p><em>Jr. Software Engineer</em> (Feb 2023 - Jul 2023)</p>
-        <ul>
-            <li>Integrated a dining reservation service into a ticket booking system using Spring Boot and PostgreSQL.</li>
-            <li>Researched and implemented Apache Druid and GCP Pub/Sub module.</li>
-            <li>Led knowledge transfer sessions to upskill team members.</li>
-        </ul>
-        <div class="doc-dropdown tooltip">
-            <span class="tooltiptext"><i class="fas fa-file-pdf"></i> Experience Certificate</span>
-            <a href="https://drive.google.com/file/d/1ApXxBHI4eKTkoQzW6vfbdtqlMYxz1MpF/view?usp=drive_link" 
-               target="_blank" 
-               rel="noopener noreferrer">
-              <button class="doc-dropdown-btn"><i class="fas fa-file-download"></i></button>
-
-            </a>
-          </div>
-          
-    </div>
-   
-    <div class="experience-item">
-        <h3>Dexlock, Kochi, India</h3>
-        <p><em>Software Engineer</em> (Sep 2021 - Dec 2022)</p>
-        <ul>
-            <li>Developed DeFi applications and improved transaction efficiency by 30%.</li>
-            <li>Managed server infrastructure and mentored junior developers in blockchain development.</li>
-        </ul>
-        <div class="doc-dropdown tooltip">
-            <span class="tooltiptext"><i class="fas fa-file-pdf"></i> Experience Certificate</span>
-            <a href="https://drive.google.com/file/d/1xXs4PBrBR8vT4yoqfT42QUlF7IiNWyey/view?usp=drive_link" 
-               target="_blank" 
-               rel="noopener noreferrer">
-              <button class="doc-dropdown-btn"><i class="fas fa-file-download"></i></button>
-
-            </a>
-          </div>
-    </div>
-</section>
-
-<section id="research" class="visible">
-    <h2>Research & Development</h2>
-    <div class="project-card">
-        <h3><i class="fas fa-database"></i> Apache Druid</h3>
-        <ul class="research-points">
-            <li>Orchestrated local deployment using Docker on Windows environment.</li>
-            <li>Integrated JSON-formatted data into Apache Druid platform.</li>
-            <li>Executed data retrieval via SQL and native Druid queries.</li>
-            <li>Developed PoC in Java demonstrating data retrieval through Druid API.</li>
-        </ul>
-    </div>
-
-    <div class="project-card">
-        <h3><i class="fas fa-cloud"></i> Google Cloud Platform (GCP) Pub/Sub</h3>
-        <ul class="research-points">
-            <li>Set up local GCP Pub/Sub emulator for development and testing.</li>
-            <li>Developed JavaScript-based publisher and subscriber validating message communication.</li>
-        </ul>
-    </div>
-</section>
-
-<section id="projects" class="visible">
-    <h2>Key Projects</h2>
-
-    <div class="project-card">
-        <h3><i class="fas fa-ticket-alt"></i> Ticket Booking System (Bytestrone)</h3>
-        <ul class="project-points">
-            <li>Developed backend platform for cruise/flight booking with Spring Boot and PostgreSQL.</li>
-            <li>Integrated external dining service for streamlined booking, cancellation, and modification.</li>
-            <li>Handled service errors and environment-related issues ensuring resilience.</li>
-            <li>Enhanced DAO and response layers for smooth service integration.</li>
-            <li>Developed JUnit tests for dining service operations.</li>
-            <li>Executed database updates to manage emergency stations on ships.</li>
-            <li>Conducted manual API testing using Postman with comprehensive test collections.</li>
-        </ul>
-        <div class="tech-stack">
-            <span class="tech-tag"><i class="fab fa-java"></i> Java</span>
-            <span class="tech-tag"><i class="fas fa-leaf"></i> Spring Boot</span>
-            <span class="tech-tag"><i class="fas fa-database"></i> PostgreSQL</span>
-            <span class="tech-tag"><i class="fas fa-check-square"></i> JUnit</span>
-            <span class="tech-tag"><i class="fas fa-paper-plane"></i> Postman</span>
+    <header>
+        <div class="profile-container">
+            <div class="profile-photo">
+                <img src="Asif (1).jpg">
+            </div>
+            <div class="profile-info">
+                <h1>Asif Mohammed C A</h1>
+                <p><i class="fas fa-laptop-code"></i> Software Engineer | Backend Developer </p>
+                <div class="address-details">
+                    <i class="fas fa-map-marker-alt"></i>Halle (Saale), Saxony-Anhalt, Germany
+                </div>
+            </div>
         </div>
-    </div>
-
-    <div class="project-card">
-        <h3><i class="fas fa-coins"></i> Decentralized Financial Application (Dexlock)</h3>
-        <ul class="project-points">
-            <li>Built crypto finance website for vault creation and cryptocurrency deposits (www.yieldster.io).</li>
-            <li>Implemented authentication using JWT Token and web3j.</li>
-            <li>Developed backend vault creation and chain transaction management.</li>
-            <li>Created APIs, schedulers, caching with Guava, and integrated Swagger-UI.</li>
-            <li>Developed smart contracts with Solidity, tested on various networks.</li>
-            <li>Built Python SDK for external developer interaction and Swagger client.</li>
-        </ul>
-        <div class="tech-stack">
-            <span class="tech-tag"><i class="fas fa-link"></i> Blockchain</span>
-            <span class="tech-tag"><i class="fab fa-java"></i> Java</span>
-            <span class="tech-tag"><i class="fas fa-leaf"></i> Spring Boot</span>
-            <span class="tech-tag"><i class="fab fa-ethereum"></i> Solidity</span>
-            <span class="tech-tag"><i class="fab fa-js"></i> JavaScript</span>
-            <span class="tech-tag"><i class="fab fa-python"></i> Python</span>
-            <span class="tech-tag"><i class="fas fa-database"></i> MongoDB</span>
-        </div>
-    </div>
-
-    <div class="project-card">
-        <h3><i class="fas fa-users"></i> Employee Management System (Dexlock)</h3>
-        <ul class="project-points">
-            <li>Web application for managing employee information, leave requests, and schedules.</li>
-            <li>JWT-based authentication and role-based access control.</li>
-            <li>Implemented file upload/download using multer.</li>
-        </ul>
-        <div class="tech-stack">
-            <span class="tech-tag"><i class="fab fa-node-js"></i> Node.js</span>
-            <span class="tech-tag"><i class="fas fa-server"></i> Express</span>
-            <span class="tech-tag"><i class="fas fa-database"></i> MongoDB</span>
-            <span class="tech-tag"><i class="fas fa-paper-plane"></i> Postman</span>
-        </div>
-    </div>
-
-    <div class="project-card">
-        <h3><i class="fas fa-shopping-cart"></i> E-Commerce Application</h3>
-        <a href="https://github.com/asifmohammedca/E-Commerce-Application-Java" target="_blank" class="project-link tooltip">
-            <i class="fab fa-github"></i>
-            <span class="tooltiptextgit">View on GitHub</span>
+        <a class="download-btn attention tooltip"
+            href="https://drive.google.com/file/d/1YYXLUh3hnuRJQZSA8-LoB1FBtDv4IwRG/view?usp=drive_link" target="_blank"
+            rel="noopener noreferrer">
+            <i class="fas fa-file-download"></i> Download CV
+            <span class="tooltiptext">Download Resume</span>
         </a>
-        <ul class="project-points">
-            <li>Microservices architecture using Spring Boot, Kafka, Eureka, API Gateway, and Config Server.</li>
-            <li>Persistence via MongoDB, PostgreSQL, Hibernate, JPA, Flyway.</li>
-            <li>Containerized services with Docker and Docker Compose.</li>
-            <li>Implemented distributed tracing using Zipkin and API documentation with Swagger.</li>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#research">Research & Development</a>
+            <a href="#education">Education</a>
+            <a href="#certificates">Certificates & Training</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about" class="visible">
+        <h2>About Me</h2>
+        <p>I’m Asif Mohammed C A — a curious, driven, and detail-oriented Software Engineer with over two years of
+            professional experience in backend development. I specialize in Java, Spring Boot, and microservice
+            architecture, and have a strong track record of designing and implementing scalable APIs, integrating
+            third-party services, and contributing to the full software development lifecycle. My experience at
+            companies like Dexlock and Bytestrone involved developing enterprise-grade applications, implementing secure
+            authentication systems, and working with technologies such as PostgreSQL, MongoDB, SQL, Docker, and Kafka.
+            I’ve also contributed to blockchain-based solutions, including stablecoin integration and EVM-compatible
+            smart contract development.</p>
+        <p>Currently, I’m pursuing my Master’s degree in Computer Engineering for IoT Systems in Germany, which has
+            expanded my perspective on embedded systems, IoT architectures, and the integration of hardware and
+            software. This academic foundation complements my professional background, allowing me to approach
+            problem-solving with both theoretical depth and practical insight. I enjoy tackling complex challenges,
+            building modular and maintainable systems, and exploring interdisciplinary applications of software
+            engineering.</p>
+        <p>What excites me most is crafting technology that is not only functional but also impactful. Whether I’m
+            developing secure APIs, designing system architectures, or contributing to open-source projects, I approach
+            every task with precision, creativity, and a continuous learning mindset. Outside of work, you'll often find
+            me working on hardware experiments using platforms like Wokwi, solving algorithmic challenges on LeetCode,
+            or keeping up with the latest in blockchain and infrastructure. My goal is to keep growing as a developer
+            and to contribute to solutions that make a meaningful difference.</p>
+    </section>
+
+    <section id="skills" class="visible">
+        <h2>Core Skills</h2>
+        <ul class="skill-list">
+            <li style="--fa-icon: '\f121';"><i class="fas fa-code"></i> <strong>Languages:</strong> Java, Python,
+                JavaScript, Solidity, C++, TypeScript</li>
+            <li style="--fa-icon: '\f13b';"><i class="fas fa-cogs"></i> <strong>Frameworks:</strong> Spring Boot, Flask,
+                Node.js, Express.js, Truffle</li>
+            <li style="--fa-icon: '\f1c0';"><i class="fas fa-database"></i> <strong>Databases:</strong> PostgreSQL,
+                MongoDB, MySQL, Apache Druid</li>
+            <li style="--fa-icon: '\f0c2';"><i class="fas fa-cloud"></i> <strong>Cloud & Tools:</strong> Docker,
+                Kubernetes, GCP Pub/Sub, Jenkins, GitHub Actions</li>
+            <li style="--fa-icon: '\f085';"><i class="fas fa-microchip"></i> <strong>Technologies:</strong>
+                Microservices, RESTful APIs, GraphQL, Web3, Blockchain</li>
+            <li style="--fa-icon: '\f1e0';"><i class="fas fa-code-branch"></i> <strong>Version Control:</strong> GitLab,
+                GitHub, BitBucket</li>
+            <li style="--fa-icon: '\f120';"><i class="fas fa-terminal"></i> <strong>Debugging & IDEs:</strong> IntelliJ
+                IDEA, PyCharm, VS Code — strong debugging and troubleshooting skills</li>
         </ul>
-        <div class="tech-stack">
-            <span class="tech-tag"><i class="fab fa-java"></i> Java</span>
-            <span class="tech-tag"><i class="fas fa-leaf"></i> Spring Boot</span>
-            <span class="tech-tag"><i class="fas fa-server"></i> Microservices</span>
-            <span class="tech-tag"><i class="fas fa-exchange-alt"></i> Kafka</span>
-            <span class="tech-tag"><i class="fas fa-compass"></i> Eureka</span>
-            <span class="tech-tag"><i class="fas fa-door-open"></i> API Gateway</span>
-            <span class="tech-tag"><i class="fas fa-database"></i> MongoDB</span>
-            <span class="tech-tag"><i class="fas fa-database"></i> PostgreSQL</span>
-            <span class="tech-tag"><i class="fas fa-file-code"></i> Hibernate/JPA</span>
-            <span class="tech-tag"><i class="fas fa-plane-departure"></i> Flyway</span>
-            <span class="tech-tag"><i class="fab fa-docker"></i> Docker</span>
-            <span class="tech-tag"><i class="fas fa-network-wired"></i> Zipkin</span>
-            <span class="tech-tag"><i class="fas fa-file-alt"></i> Swagger</span>
+    </section>
+
+    <section id="experience" class="visible">
+        <h2>Professional Experience</h2>
+
+        <div class="experience-item">
+            <h3>Bytestrone, Kochi, India</h3>
+            <p><em>Jr. Software Engineer</em> (Feb 2023 - Jul 2023)</p>
+            <ul>
+                <li>Integrated a dining reservation service into a ticket booking system using Spring Boot and
+                    PostgreSQL.</li>
+                <li>Researched and implemented Apache Druid and GCP Pub/Sub module.</li>
+                <li>Led knowledge transfer sessions to upskill team members.</li>
+            </ul>
+            <div class="doc-dropdown tooltip">
+                <span class="tooltiptext"><i class="fas fa-file-pdf"></i> Experience Certificate</span>
+                <a href="https://drive.google.com/file/d/1ApXxBHI4eKTkoQzW6vfbdtqlMYxz1MpF/view?usp=drive_link"
+                    target="_blank" rel="noopener noreferrer">
+                    <button class="doc-dropdown-btn"><i class="fas fa-file-download"></i></button>
+
+                </a>
+            </div>
+
         </div>
-    </div>
-</section>
 
-<section id="education" class="visible">
-    <h2>Education</h2>
-    <div class="experience-item">
-        <h3>Hochschule Nordhausen University of Applied Sciences, Germany</h3>
-        <p><em>Master's in Computer Engineering for IoT Systems</em> (2023-Present)</p>
-        <div class="doc-dropdown tooltip">
-            <span class="tooltiptext"><i class="fas fa-file-pdf"></i>Relevent Certificates</span>
+        <div class="experience-item">
+            <h3>Dexlock, Kochi, India</h3>
+            <p><em>Software Engineer</em> (Sep 2021 - Dec 2022)</p>
+            <ul>
+                <li>Developed DeFi applications and improved transaction efficiency by 30%.</li>
+                <li>Managed server infrastructure and mentored junior developers in blockchain development.</li>
+            </ul>
+            <div class="doc-dropdown tooltip">
+                <span class="tooltiptext"><i class="fas fa-file-pdf"></i> Experience Certificate</span>
+                <a href="https://drive.google.com/file/d/1xXs4PBrBR8vT4yoqfT42QUlF7IiNWyey/view?usp=drive_link"
+                    target="_blank" rel="noopener noreferrer">
+                    <button class="doc-dropdown-btn"><i class="fas fa-file-download"></i></button>
 
-            <a href="https://drive.google.com/file/d/1uiuYaSWWCvR2P8PKoSGJiLvwzbL0MxZd/view?usp=drive_link" 
-               target="_blank" 
-               rel="noopener noreferrer">
-              <button class="doc-dropdown-btn"><i class="fas fa-file-download"></i></button>
+                </a>
+            </div>
+        </div>
+    </section>
 
+    <section id="research" class="visible">
+        <h2>Research & Development</h2>
+        <div class="project-card">
+            <h3><i class="fas fa-database"></i> Apache Druid</h3>
+            <ul class="research-points">
+                <li>Orchestrated local deployment using Docker on Windows environment.</li>
+                <li>Integrated JSON-formatted data into Apache Druid platform.</li>
+                <li>Executed data retrieval via SQL and native Druid queries.</li>
+                <li>Developed PoC in Java demonstrating data retrieval through Druid API.</li>
+            </ul>
+        </div>
+
+        <div class="project-card">
+            <h3><i class="fas fa-cloud"></i> Google Cloud Platform (GCP) Pub/Sub</h3>
+            <ul class="research-points">
+                <li>Set up local GCP Pub/Sub emulator for development and testing.</li>
+                <li>Developed JavaScript-based publisher and subscriber validating message communication.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="visible">
+        <h2>Key Projects</h2>
+
+        <div class="project-card">
+            <h3><i class="fas fa-ticket-alt"></i> Ticket Booking System (Bytestrone)</h3>
+            <ul class="project-points">
+                <li>Developed backend platform for cruise/flight booking with Spring Boot and PostgreSQL.</li>
+                <li>Integrated external dining service for streamlined booking, cancellation, and modification.</li>
+                <li>Handled service errors and environment-related issues ensuring resilience.</li>
+                <li>Enhanced DAO and response layers for smooth service integration.</li>
+                <li>Developed JUnit tests for dining service operations.</li>
+                <li>Executed database updates to manage emergency stations on ships.</li>
+                <li>Conducted manual API testing using Postman with comprehensive test collections.</li>
+            </ul>
+            <div class="tech-stack">
+                <span class="tech-tag"><i class="fab fa-java"></i> Java</span>
+                <span class="tech-tag"><i class="fas fa-leaf"></i> Spring Boot</span>
+                <span class="tech-tag"><i class="fas fa-database"></i> PostgreSQL</span>
+                <span class="tech-tag"><i class="fas fa-check-square"></i> JUnit</span>
+                <span class="tech-tag"><i class="fas fa-paper-plane"></i> Postman</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3><i class="fas fa-coins"></i> Decentralized Financial Application (Dexlock)</h3>
+            <ul class="project-points">
+                <li>Built crypto finance website for vault creation and cryptocurrency deposits (www.yieldster.io).</li>
+                <li>Implemented authentication using JWT Token and web3j.</li>
+                <li>Developed backend vault creation and chain transaction management.</li>
+                <li>Created APIs, schedulers, caching with Guava, and integrated Swagger-UI.</li>
+                <li>Developed smart contracts with Solidity, tested on various networks.</li>
+                <li>Built Python SDK for external developer interaction and Swagger client.</li>
+            </ul>
+            <div class="tech-stack">
+                <span class="tech-tag"><i class="fas fa-link"></i> Blockchain</span>
+                <span class="tech-tag"><i class="fab fa-java"></i> Java</span>
+                <span class="tech-tag"><i class="fas fa-leaf"></i> Spring Boot</span>
+                <span class="tech-tag"><i class="fab fa-ethereum"></i> Solidity</span>
+                <span class="tech-tag"><i class="fab fa-js"></i> JavaScript</span>
+                <span class="tech-tag"><i class="fab fa-python"></i> Python</span>
+                <span class="tech-tag"><i class="fas fa-database"></i> MongoDB</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3><i class="fas fa-users"></i> Employee Management System (Dexlock)</h3>
+            <ul class="project-points">
+                <li>Web application for managing employee information, leave requests, and schedules.</li>
+                <li>JWT-based authentication and role-based access control.</li>
+                <li>Implemented file upload/download using multer.</li>
+            </ul>
+            <div class="tech-stack">
+                <span class="tech-tag"><i class="fab fa-node-js"></i> Node.js</span>
+                <span class="tech-tag"><i class="fas fa-server"></i> Express</span>
+                <span class="tech-tag"><i class="fas fa-database"></i> MongoDB</span>
+                <span class="tech-tag"><i class="fas fa-paper-plane"></i> Postman</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3><i class="fas fa-shopping-cart"></i> E-Commerce Application</h3>
+            <a href="https://github.com/asifmohammedca/E-Commerce-Application-Java" target="_blank"
+                class="project-link tooltip">
+                <i class="fab fa-github"></i>
+                <span class="tooltiptextgit">View on GitHub</span>
             </a>
-          </div>
-    </div>
-    
-    <div class="experience-item">
-        <h3>Federal Institute of Science and Technology, India</h3>
-        <p><em>Bachelor's in Computer Science and Engineering</em> (2017-2021)</p>
-        <div class="doc-dropdown tooltip">
-            <span class="tooltiptext"><i class="fas fa-file-pdf"></i>Relevent Certificates</span>
-
-            <a href="https://drive.google.com/file/d/1M_rksf_Am6QHEQvWWt9pqRl866-SdrsP/view?usp=drive_link" 
-               target="_blank" 
-               rel="noopener noreferrer">
-              <button class="doc-dropdown-btn"><i class="fas fa-file-download"></i></button>
-
+            <ul class="project-points">
+                <li>Microservices architecture using Spring Boot, Kafka, Eureka, API Gateway, and Config Server.</li>
+                <li>Persistence via MongoDB, PostgreSQL, Hibernate, JPA, Flyway.</li>
+                <li>Containerized services with Docker and Docker Compose.</li>
+                <li>Implemented distributed tracing using Zipkin and API documentation with Swagger.</li>
+            </ul>
+            <div class="tech-stack">
+                <span class="tech-tag"><i class="fab fa-java"></i> Java</span>
+                <span class="tech-tag"><i class="fas fa-leaf"></i> Spring Boot</span>
+                <span class="tech-tag"><i class="fas fa-server"></i> Microservices</span>
+                <span class="tech-tag"><i class="fas fa-exchange-alt"></i> Kafka</span>
+                <span class="tech-tag"><i class="fas fa-compass"></i> Eureka</span>
+                <span class="tech-tag"><i class="fas fa-door-open"></i> API Gateway</span>
+                <span class="tech-tag"><i class="fas fa-database"></i> MongoDB</span>
+                <span class="tech-tag"><i class="fas fa-database"></i> PostgreSQL</span>
+                <span class="tech-tag"><i class="fas fa-file-code"></i> Hibernate/JPA</span>
+                <span class="tech-tag"><i class="fas fa-plane-departure"></i> Flyway</span>
+                <span class="tech-tag"><i class="fab fa-docker"></i> Docker</span>
+                <span class="tech-tag"><i class="fas fa-network-wired"></i> Zipkin</span>
+                <span class="tech-tag"><i class="fas fa-file-alt"></i> Swagger</span>
+            </div>
+        </div>
+        <div class="project-card">
+            <h3><i class="fas fa-eye"></i> Drowsiness Detection System</h3>
+            <a href="https://github.com/asifmohammedca/Drowsiness-Detection-and-Alert-System" target="_blank"
+                class="project-link tooltip">
+                <i class="fab fa-github"></i>
+                <span class="tooltiptextgit">View on GitHub</span>
             </a>
-          </div>
-    </div>
-</section>
+            <ul class="project-points">
+                <li>Developed real-time driver drowsiness detection system using computer vision and facial landmark
+                    detection.</li>
+                <li>Implemented eye aspect ratio (EAR) algorithm to detect eye closure and yawning detection techniques.
+                </li>
+                <li>Created alert system with audio alarms when drowsiness is detected for more than 3 seconds.</li>
+                <li>Built logging system to track drowsiness events with timestamps and metrics.</li>
+                <li>Optimized face and eye detection with Dlib and OpenCV for real-time performance.</li>
+            </ul>
+            <div class="tech-stack">
+                <span class="tech-tag"><i class="fab fa-python"></i> Python</span>
+                <span class="tech-tag"><i class="fas fa-camera"></i> OpenCV</span>
+                <span class="tech-tag"><i class="fas fa-robot"></i> Dlib</span>
+                <span class="tech-tag"><i class="fas fa-table"></i> Pandas</span>
+                <span class="tech-tag"><i class="fas fa-calculator"></i> NumPy</span>
+                <span class="tech-tag"><i class="fas fa-volume-up"></i> Pygame</span>
+            </div>
+        </div>
+    </section>
 
-<section id="contact" class="visible">
-    <h2>Contact</h2>
-    <div class="contact">
-      <a href="mailto:asifmohammedca96@gmail.com"><i class="fas fa-envelope"></i> asifmohammedca96@gmail.com</a>
-      <a href="tel:+491794202728"><i class="fas fa-phone"></i> +491794202728</a>
-      <a href="https://www.linkedin.com/in/asif-mohammedca/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-      <a href="https://github.com/asifmohammedca/" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-      <a href="https://leetcode.com/asifmohammedca/" target="_blank"><i class="fas fa-code"></i> LeetCode</a>
-      <a href="https://wokwi.com/makers/asifca" target="_blank"><i class="fas fa-microchip"></i> Wokwi</a>
-    </div>
-  </section>
-  
+    <section id="education" class="visible">
+        <h2>Education</h2>
+        <div class="experience-item">
+            <h3>Hochschule Nordhausen University of Applied Sciences, Germany</h3>
+            <p><em>Master's in Computer Engineering for IoT Systems</em> (2023-Present)</p>
+            <div class="doc-dropdown tooltip">
+                <span class="tooltiptext"><i class="fas fa-file-pdf"></i>Relevent Certificates</span>
 
-  <footer>
-    <p>&copy; 2025 Asif Mohammed | All Rights Reserved</p>
-    <p><i class="fas fa-map-marker-alt"></i> Halle (Saale), Saxony-Anhalt, Germany</p>
-  </footer>
-  
+                <a href="https://drive.google.com/file/d/1uiuYaSWWCvR2P8PKoSGJiLvwzbL0MxZd/view?usp=drive_link"
+                    target="_blank" rel="noopener noreferrer">
+                    <button class="doc-dropdown-btn"><i class="fas fa-file-download"></i></button>
 
-<script>
-    // Scroll animation for sections
-    document.addEventListener('DOMContentLoaded', function() {
-        const sections = document.querySelectorAll('section');
-        
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.1
-        };
-        
-        const observer = new IntersectionObserver(function(entries, observer) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target);
-                }
+                </a>
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <h3>Federal Institute of Science and Technology, India</h3>
+            <p><em>Bachelor's in Computer Science and Engineering</em> (2017-2021)</p>
+            <div class="doc-dropdown tooltip">
+                <span class="tooltiptext"><i class="fas fa-file-pdf"></i>Relevent Certificates</span>
+
+                <a href="https://drive.google.com/file/d/1M_rksf_Am6QHEQvWWt9pqRl866-SdrsP/view?usp=drive_link"
+                    target="_blank" rel="noopener noreferrer">
+                    <button class="doc-dropdown-btn"><i class="fas fa-file-download"></i></button>
+
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="certificates" class="visible">
+        <h2>Certificates & Training</h2>
+
+        <div class="project-card">
+            <h3><i class="fas fa-certificate"></i> Technical Certifications</h3>
+            <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-top: 20px;">
+                <div class="doc-dropdown tooltip">
+                    <span class="tooltiptext"><i class="fas fa-file-pdf"></i> NPTEL Problem Solving Certificate</span>
+                    <a href="https://drive.google.com/file/d/1wyw1EFdqyx-3b8xcXAfRdAebuKhUJJ1V/view?usp=drive_link"
+                        target="_blank" rel="noopener noreferrer">
+                        <button class="doc-dropdown-btn"><i class="fas fa-file-download"></i></button>
+                    </a>
+                </div>
+
+                <div class="doc-dropdown tooltip">
+                    <span class="tooltiptext"><i class="fas fa-file-pdf"></i> Microsoft AI Classroom Series</span>
+                    <a href="https://drive.google.com/file/d/1q-CAUnl419ciT5VM_-rjex1jHYOdfCC7/view?usp=drive_link"
+                        target="_blank" rel="noopener noreferrer">
+                        <button class="doc-dropdown-btn"><i class="fas fa-file-download"></i></button>
+                    </a>
+                </div>
+
+                <div class="doc-dropdown tooltip">
+                    <span class="tooltiptext"><i class="fas fa-file-pdf"></i> Python Programming Certificate</span>
+                    <a href="https://drive.google.com/file/d/1pmpFSk9fFMsudxFi0oUUyC--olJ1AvKG/view?usp=drive_link"
+                        target="_blank" rel="noopener noreferrer">
+                        <button class="doc-dropdown-btn"><i class="fas fa-file-download"></i></button>
+                    </a>
+                </div>
+            </div>
+
+            <div style="margin-top: 20px;">
+                <ul class="project-points">
+                    <li><strong>NPTEL Problem Solving through Programming in C (2020)</strong> - Completed with Elite
+                        certification scoring 74% in this 12-week course offered by IIT Kharagpur.</li>
+                    <li><strong>Microsoft AI Classroom Series (2020)</strong> - Participated in Microsoft's AI training
+                        program offered in collaboration with NASSCOM.</li>
+                    <li><strong>Programming for Everybody: Getting Started with Python (2020)</strong> - Successfully
+                        completed this course offered by University of Michigan through Coursera.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3><i class="fas fa-award"></i> Professional Development</h3>
+            <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-top: 20px;">
+                <div class="doc-dropdown tooltip">
+                    <span class="tooltiptext"><i class="fas fa-file-pdf"></i> Tech Summit Certificate</span>
+                    <a href="https://drive.google.com/file/d/1_ugi4-13izihQHBZyALivYYqxLiSZvEo/view?usp=drive_link" target="_blank"
+                        rel="noopener noreferrer">
+                        <button class="doc-dropdown-btn"><i class="fas fa-file-download"></i></button>
+                    </a>
+                </div>
+
+                <div class="doc-dropdown tooltip">
+                    <span class="tooltiptext"><i class="fas fa-file-pdf"></i> Game Development Workshop</span>
+                    <a href="https://drive.google.com/file/d/19OXPcMXM-uQ1CEiV8Yih6F5CUzbRHk3h/view?usp=drive_link"
+                        target="_blank" rel="noopener noreferrer">
+                        <button class="doc-dropdown-btn"><i class="fas fa-file-download"></i></button>
+                    </a>
+                </div>
+
+                <div class="doc-dropdown tooltip">
+                    <span class="tooltiptext"><i class="fas fa-file-pdf"></i> Power Communication Workshop</span>
+                    <a href="https://drive.google.com/file/d/1xJBpvxMuQcq2vXCDleaOmlgnqyQg5VDM/view?usp=drive_link" target="_blank"
+                        rel="noopener noreferrer">
+                        <button class="doc-dropdown-btn"><i class="fas fa-file-download"></i></button>
+                    </a>
+                </div>
+            </div>
+
+            <div style="margin-top: 20px;">
+                <ul class="project-points">
+                    <li><strong>IEEE NITC Tech Summit (2019)</strong> - Attended the Vertechs tech summit conducted by
+                        IEEE NITC Student Branch at National Institute of Technology Calicut.</li>
+                    <li><strong>Game Development with Unity (AR) Workshop (2018)</strong> - Participated in an AR game
+                        development workshop during DRISHTI at College of Engineering Trivandrum.</li>
+                    <li><strong>Power Communication Training (2019)</strong> - Successfully completed the MPOWER
+                        training workshop on Power Communication by Vertical Eye Life Skill Training Foundation.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="visible">
+        <h2>Contact</h2>
+        <div class="contact">
+            <a href="mailto:asifmohammedca96@gmail.com"><i class="fas fa-envelope"></i> asifmohammedca96@gmail.com</a>
+            <a href="tel:+491794202728"><i class="fas fa-phone"></i> +491794202728</a>
+            <a href="https://www.linkedin.com/in/asif-mohammedca/" target="_blank"><i class="fab fa-linkedin"></i>
+                LinkedIn</a>
+            <a href="https://github.com/asifmohammedca/" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://leetcode.com/asifmohammedca/" target="_blank"><i class="fas fa-code"></i> LeetCode</a>
+            <a href="https://wokwi.com/makers/asifca" target="_blank"><i class="fas fa-microchip"></i> Wokwi</a>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2025 Asif Mohammed | All Rights Reserved</p>
+    </footer>
+
+
+    <script>
+        // Scroll animation for sections
+        document.addEventListener('DOMContentLoaded', function () {
+            const sections = document.querySelectorAll('section');
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver(function (entries, observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                observer.observe(section);
             });
-        }, observerOptions);
-        
-        sections.forEach(section => {
-            observer.observe(section);
-        });
-        
-        // Initialize document downloads
-        const downloadLinks = document.querySelectorAll("[href$='.pdf']");
-        downloadLinks.forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                const fileName = this.getAttribute('href').split('/').pop();
-                alert('Downloaded: ' + fileName);
+
+            // Initialize document downloads
+            const downloadLinks = document.querySelectorAll("[href$='.pdf']");
+            downloadLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const fileName = this.getAttribute('href').split('/').pop();
+                    alert('Downloaded: ' + fileName);
+                });
             });
+
+            // Remove attention class after 5 seconds
+            setTimeout(function () {
+                document.querySelector('.download-btn').classList.remove('attention');
+            }, 5000);
         });
-        
-        // Remove attention class after 5 seconds
-        setTimeout(function() {
-            document.querySelector('.download-btn').classList.remove('attention');
-        }, 5000);
-    });
-</script>
+    </script>
 
 </body>
+
 </html>
