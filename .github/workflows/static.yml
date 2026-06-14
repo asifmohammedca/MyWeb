@@ -27,6 +27,9 @@ jobs:
       - name: Rename to index.html
         run: mv Port_Website.html index.html
 
+      - name: Prepare profile image
+        run: cp "Asif (1).png" profile-picture.png
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
